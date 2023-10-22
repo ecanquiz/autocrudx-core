@@ -1,0 +1,30 @@
+{
+  "name": "autocrux-utils",
+  "version": "0.0.1",
+  "description": "AutoCRUDx Utils",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run test",
+    "build": "tsc"
+  },
+  "keywords": [
+    "autocrudx"
+  ],
+  "author": "Ernesto Canquiz",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3"
+  },
+  "_moduleAliases": {    
+    "@core": "dist/core",
+    "@coreModules": "dist/core/modules",
+    "@coreProcesses": "dist/core/processes",
+    "@coreTypes": "dist/core/types",
+    "@coreUtils": "dist/core/utils"
+  }
+}
