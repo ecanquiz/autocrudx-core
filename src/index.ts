@@ -1,12 +1,12 @@
-import main           from '@coreProcesses/main'
-import consoleLog     from '@coreUtils/consoleLog'
-import rendering      from '@coreUtils/rendering';
-import fn             from '@coreUtils/fn'
-import { singular }   from '@coreUtils/grammaticalNumber'
-import { uCamelCase } from '@coreUtils/nomenclature'
-import getCustomData  from '@coreProcesses/getCustomData'
-import getDataOfBD    from '@coreProcesses/getDataOfBD'
-import db             from '@coreModules/db';
+import consoleLog     from './utils/consoleLog'
+import rendering      from './utils/rendering';
+import fn             from './utils/fn'
+import { singular }   from './utils/grammaticalNumber'
+import { uCamelCase } from './utils/nomenclature'
+import db             from './modules/db';
+import getCustomData  from './processes/getCustomData'
+import getDataOfBD    from './processes/getDataOfBD'
+import main           from './processes/main'
 
 import type {
     GetDataOfBDParams,
@@ -14,13 +14,13 @@ import type {
     DataOfBD,
     fieldStructure,
     TableDetailsOfMaster
-} from '@coreTypes/db'
+} from './types/db'
 
 import type {
     ParamsAll,
     Rendering,
     tableDetailsOfMasterCustomized
-} from '@coreTypes/rendering'
+} from './types/rendering'
 
 export {
     main,

@@ -1,4 +1,4 @@
-import type { PropertyListsParams } from "@coreTypes/consoleLog"
+import type { PropertyListsParams } from "types/consoleLog"
 
 export const propertyLists = ({ dataOfBD, customData }: PropertyListsParams): void => {
 

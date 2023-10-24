@@ -1,11 +1,11 @@
 import { crud } from '@config/index'
-import { fn } from '@core/index'
+import { fn } from 'index'
 import type {
   GetDataOfBDParams,
   DataOfBD,
   fieldStructure,
   TableDetailsOfMaster
-} from '@core/index'
+} from 'index'
 
 export default (
   getDataOfBDParams: GetDataOfBDParams,
