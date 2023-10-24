@@ -4,7 +4,7 @@ import colors from 'colors'
 import createOutputPath from './createOutputPath'
 // import { pathUser, moduleName } from '@config/output' // TODO conflict by testing...
 import { pathUser, moduleName } from '../../config/output'
-import type { Rendering } from '@coreTypes/rendering'
+import type { Rendering } from 'types/rendering'
 
 export default ({ outputFile, outputPath, params, template }: Rendering): void => {
   params.pathModule = moduleName

@@ -13,14 +13,20 @@
   "author": "Ernesto Canquiz",
   "license": "MIT",
   "devDependencies": {
+    "@types/colors": "^1.2.1",
+    "@types/ejs": "^3.1.4",
     "@types/node": "^20.8.7",
+    "@types/pg": "^8.10.7",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
   },
   "dependencies": {
-    "module-alias": "^2.2.3"
+    "colors": "^1.4.0",
+    "ejs": "^3.1.9",
+    "module-alias": "^2.2.3",
+    "pg": "^8.11.3"
   },
-  "_moduleAliases": {    
+  "_moduleAliases": {
     "@core": "dist/core",
     "@coreModules": "dist/core/modules",
     "@coreProcesses": "dist/core/processes",

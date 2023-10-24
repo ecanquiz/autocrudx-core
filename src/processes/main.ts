@@ -1,8 +1,10 @@
-import { crud } from '@config/index'
-import { consoleLog, getCustomData, getDataOfBD } from '@core/index'
-import type { GetDataOfBDParams } from '@core/index'
+//import { crud } from '@config/index'
+import { consoleLog, getCustomData, getDataOfBD } from 'index'
+import type { Crud } from 'types/crud'
+import type { GetDataOfBDParams } from 'index'
 
 export default async (
+    crud: Crud, 
     getDataOfBDParams: GetDataOfBDParams,
     excludeFields: string[],
     consoleLogCustom:(dataJSON: any) => void
