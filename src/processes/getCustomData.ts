@@ -1,5 +1,5 @@
-import { crud } from '@config/index'
 import { fn } from 'index'
+import type { Crud } from 'types/config'
 import type {
   GetDataOfBDParams,
   DataOfBD,
@@ -8,6 +8,7 @@ import type {
 } from 'index'
 
 export default (
+  crud: Crud,
   getDataOfBDParams: GetDataOfBDParams,
   dataOfBD: DataOfBD,
   excludeFields: string[]
