@@ -176,7 +176,7 @@ export function plural(word: string, amount?: number): string {
     for (const w in irregular) {
         const pattern = new RegExp(`${w}$`, 'i')
         const replace = irregular[w]
-        if (pattern.test(word)) {
+        if (pattern.test(word)) {            
             return word.replace(pattern, replace)
         }
     }
