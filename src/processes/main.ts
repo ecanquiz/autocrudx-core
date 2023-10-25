@@ -1,6 +1,6 @@
-import { consoleLog, getCustomData, getDataOfBD } from 'index'
-import type { GetDataOfBDParams } from 'index'
-import type { Config } from 'types/config'
+import { consoleLog, getCustomData, getDataOfBD } from '../index'
+import type { GetDataOfBDParams } from '../index'
+import type { Config } from '../types/config'
 
 export default async (
     config: Config, 

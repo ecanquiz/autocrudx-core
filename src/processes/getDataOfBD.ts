@@ -1,6 +1,6 @@
 import colors from 'colors'
-import { db } from 'index';
-import type { DBConfig } from 'types/config'
+import { db } from '../index';
+import type { DBConfig } from '../types/config'
 
 import type {
   GetDataOfBDParams,
@@ -8,7 +8,7 @@ import type {
   TableDetailsOfMaster,
 } from 'index'
 
-export default async (dbConfig: DBConfig, {schema, tableMaster}: GetDataOfBDParams):  GetDataOfBDReturn=> {
+export default async (dbConfig: DBConfig, {schema, tableMaster}: GetDataOfBDParams):  Promise<GetDataOfBDReturn>=> {
   const ddbb= new db(dbConfig)
 
   const validateIfTableMasterExist = async ({schema, tableMaster}: GetDataOfBDParams):Promise<void> => {  
