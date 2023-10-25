@@ -23,14 +23,6 @@
   "dependencies": {
     "colors": "^1.4.0",
     "ejs": "^3.1.9",
-    "module-alias": "^2.2.3",
     "pg": "^8.11.3"
-  },
-  "_moduleAliases": {
-    "@core": "dist/core",
-    "@coreModules": "dist/core/modules",
-    "@coreProcesses": "dist/core/processes",
-    "@coreTypes": "dist/core/types",
-    "@coreUtils": "dist/core/utils"
   }
 }
