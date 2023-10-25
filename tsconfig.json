@@ -26,13 +26,6 @@
     "skipLibCheck": true,
     "rootDir": "./src",
     "moduleResolution": "node",
-    "baseUrl": "./src",
-    "paths": {      
-      "@core/*": ["core/*"],
-      "@coreModules/*": ["core/modules/*"],
-      "@coreProcesses/*": ["core/processes/*"],
-      "@coreTypes/*": ["core/types/*"],
-      "@coreUtils/*": ["core/utils/*"]
-    },  
+    "baseUrl": "./src"    
   }
 }
