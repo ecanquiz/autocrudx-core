@@ -19,7 +19,7 @@ export type DataOfBD = {
   tableDetailForeignKeysHelp: any[][];
 }
 
-export type GetDataOfBDReturn = Promise<DataOfBD>
+export type GetDataOfBDReturn = DataOfBD
 
 export type fieldStructure = {
   column_name: string

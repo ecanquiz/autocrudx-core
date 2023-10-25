@@ -1,5 +1,5 @@
-import { fn } from 'index'
-import type { Crud } from 'types/config'
+import { fn } from '../index'
+import type { Crud } from '../types/config'
 import type {
   GetDataOfBDParams,
   DataOfBD,

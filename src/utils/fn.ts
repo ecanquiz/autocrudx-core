@@ -1,6 +1,6 @@
 import { uCamelCase, camelCase } from './nomenclature';
 import { singular } from './grammaticalNumber'
-import type { TableMasterForeignKeysAssoc } from 'types/db';
+import type { TableMasterForeignKeysAssoc } from '../types/db';
 
 export const addCommaToArr = ( arr: any[], index: number, less = 0 ) =>
   index < arr.length - 1 - less ? ', ' : ''

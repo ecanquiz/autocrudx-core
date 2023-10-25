@@ -1,8 +1,9 @@
 {
   "name": "autocrux-utils",
-  "version": "0.0.1",
+  "version": "0.0.14",
   "description": "AutoCRUDx Utils",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "npm run test",
     "build": "tsc"

@@ -2,7 +2,7 @@ import fs from 'fs'
 import ejs from 'ejs'
 import colors from 'colors'
 import createOutputPath from './createOutputPath'
-import type { Rendering } from 'types/rendering'
+import type { Rendering } from '../types/rendering'
 
 export default ({ outputFile, outputPath, params, template }: Rendering): void => {
   params.pathModule = params.moduleName
