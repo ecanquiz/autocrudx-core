@@ -1,5 +1,5 @@
 {
-  "name": "autocrux-tools",
+  "name": "autocrudx-tools",
   "version": "0.0.1",
   "description": "Auto CRUDx Tools",
   "main": "dist/index.js",
