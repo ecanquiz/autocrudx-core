@@ -26,5 +26,5 @@ If you want to simply install it, run:
 npm i autocrudx-tools
 ```
 
-Check here: https://www.npmjs.com/package/autocrux-tools
+Check here: https://www.npmjs.com/package/autocrudx-tools
 
