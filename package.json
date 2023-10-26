@@ -1,11 +1,11 @@
 {
-  "name": "autocrux-utils",
-  "version": "0.0.14",
-  "description": "AutoCRUDx Utils",
+  "name": "autocrux-tools",
+  "version": "0.0.1",
+  "description": "Auto CRUDx Tools",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "npm run test",
+    "test": "vitest",
     "build": "tsc"
   },
   "keywords": [
@@ -16,8 +16,10 @@
   "devDependencies": {
     "@types/colors": "^1.2.1",
     "@types/ejs": "^3.1.4",
+    "@types/mock-fs": "^4.13.3",
     "@types/node": "^20.8.7",
     "@types/pg": "^8.10.7",
+    "mock-fs": "^5.2.0",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
   },
