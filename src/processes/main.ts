@@ -7,15 +7,19 @@ export default async (
     getDataOfBDParams: GetDataOfBDParams,
     excludeFields: string[],
     consoleLogCustom:(dataJSON: any) => void
-): Promise<void> => {
+): Promise<void> => { 
     const dataOfBD = await getDataOfBD(config.dbConfig, getDataOfBDParams)  
     const customData = getCustomData(config.crud, getDataOfBDParams, dataOfBD, excludeFields)  
     if (config.crud.generate) {
-        const backendProcess = (await import(`@stack/${config.crud.stackBackend}/process`)).default
-        const frontendProcess = (await import(`@stack/${config.crud.stackFrontend}/process`)).default
-        backendProcess(customData)
-        customData.tableStructure = customData.tableStructureClean
-        frontendProcess(customData)
+        if (config.crud.stackBackend) {
+            const backendProcess = (await import(`@stack/${config.crud.stackBackend}/process`)).default
+            backendProcess(customData)
+        } else console.log('No backend stack')
+        if (config.crud.stackFrontend) {
+            customData.tableStructure = customData.tableStructureClean
+            const frontendProcess = (await import(`@stack/${config.crud.stackFrontend}/process`)).default
+            frontendProcess(customData)
+        } else console.log('No frontend stack')
     } else {
         consoleLog.propertyLists({ dataOfBD: false, customData: true})
         consoleLogCustom(customData)
