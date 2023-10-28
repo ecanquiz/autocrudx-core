@@ -28,3 +28,4 @@ npm i autocrudx-tools
 
 Check here: https://www.npmjs.com/package/autocrudx-tools
 
+The source code for this package is at: https://github.com/ecanquiz/autocrudx-tools

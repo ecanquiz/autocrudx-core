@@ -1,6 +1,6 @@
 {
   "name": "autocrudx-tools",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Auto CRUDx Tools",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,10 @@
     "build": "tsc"
   },
   "keywords": [
-    "autocrudx"
+    "autocrudx-tools",
+    "autocrudx",
+    "generate",
+    "tools"
   ],
   "author": "Ernesto Canquiz",
   "license": "MIT",
