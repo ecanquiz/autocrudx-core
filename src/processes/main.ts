@@ -29,10 +29,3 @@ export default async (
         consoleLogCustom(customData)
     }
 }
-
-/*
-
-
-  ,
-  
-*/
