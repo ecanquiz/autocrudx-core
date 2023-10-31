@@ -4,12 +4,16 @@ import type { Config } from '../types/config'
 
 export default async (
     config: Config, 
-    getDataOfBDParams: GetDataOfBDParams,
-    excludeFields: string[],
     consoleLogCustom:(dataJSON: any) => void
-): Promise<void> => { 
+): Promise<void> => {   
+    const getDataOfBDParams: GetDataOfBDParams = {
+        schema: config.crud.schema || 'public', 
+        tableMaster: config.crud.tableMaster || 'users',
+    }
+    const excludeFields: string[] = config.crud.excludeFields ?? []
     const dataOfBD = await getDataOfBD(config.dbConfig, getDataOfBDParams)  
-    const customData = getCustomData(config.crud, getDataOfBDParams, dataOfBD, excludeFields)  
+    const customData = getCustomData(config.crud, getDataOfBDParams, dataOfBD, excludeFields)
+
     if (config.crud.generate) {
         if (config.crud.stackBackend) {
             const backendProcess = (await import(`@stack/${config.crud.stackBackend}/process`)).default
@@ -26,3 +30,9 @@ export default async (
     }
 }
 
+/*
+
+
+  ,
+  
+*/
